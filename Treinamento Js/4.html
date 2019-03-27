@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>
+      Treinamento de JS
+    </title>
+  </head>
+  <body>
+    <input id="input_digitar_nome" type="text" />
+    <button id="btn_exibir_nome">Exibir Nome</button>
+    <script>
+      var btn_exibir_nome = document.querySelector("#btn_exibir_nome");
+      console.log(btn_exibir_nome);
+      var nome_digitado = document.querySelector("#input_digitar_nome");
+      console.log(nome_digitado);
+      btn_exibir_nome.onclick = function() {
+        alert("O Nome completo é " + nome_digitado.value);
+      };
+    </script>
+  </body>
+</html>

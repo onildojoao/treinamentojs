@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>
+      Treinamento de JS
+    </title>
+  </head>
+  <body>
+    <button id="btn_resultado">Resultado</button>
+    <div id="div_resultado"></div>
+
+    <script>
+      var btn_resultado = document.querySelector("#btn_resultado");
+      btn_resultado.onclick = function() {
+        var div_resultado = document.querySelector("#div_resultado");
+        //Criando linha
+        var texto = document.createTextNode("Esse texto veio do javascript");
+        //texto = ;
+        console.log(texto);
+        div_resultado.appendChild(texto);
+      };
+    </script>
+  </body>
+</html>

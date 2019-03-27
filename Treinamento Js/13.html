@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>
+      Treinamento de JS
+    </title>
+  </head>
+  <body>
+    <button id="btn_verde">Verde</button>
+    <button id="btn_vermelho">Vermelho</button>
+    <script>
+      //Captar o botão
+      var btn_verde = document.querySelector("#btn_verde");
+      var btn_vermelho = document.querySelector("#btn_vermelho");
+      //Função onclick
+      btn_verde.onclick = function() {
+        btn_verde.style = "background-color: #008000;";
+      };
+
+      btn_vermelho.onclick = function() {
+        btn_vermelho.style = "background-color: #f00;";
+      };
+    </script>
+  </body>
+</html>

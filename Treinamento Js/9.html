@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>
+      Treinamento de JS
+    </title>
+  </head>
+  <body>
+    <span>Nome: </span>
+    <input id="input_nome" type="text" />
+    <br />
+    <span>Sobrenome: </span>
+    <input id="input_sobrenome" type="text" />
+    <br />
+    <span>CPF: </span>
+    <input id="input_cpf" type="text" />
+    <br />
+    <button id="btn_saudacao">Saudação</button>
+    <script>
+      var btn_saudacao = document.querySelector("#btn_saudacao");
+      /* Função do botão
+      teste do comentário*/
+      btn_saudacao.onclick = function() {
+        var nome_digitado = document.querySelector("#input_nome").value;
+        var sobrenome_digitado = document.querySelector("#input_sobrenome")
+          .value;
+        var cpf_digitado = document.querySelector("#input_cpf").value;
+        console.log(nome_digitado);
+        console.log(sobrenome_digitado);
+        console.log(cpf_digitado);
+        cpf_digitado = cpf_digitado.replace(".", "");
+        console.log(cpf_digitado);
+
+        alert("Olá " + nome_digitado + " " + sobrenome_digitado);
+      };
+    </script>
+  </body>
+</html>

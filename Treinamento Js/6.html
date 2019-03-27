@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>
+      Treinamento de JS
+    </title>
+  </head>
+  <body>
+    <img
+      id="lampada_apagada"
+      src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true "
+    />
+    <script>
+      var troca = document.querySelector("#lampada_apagada");
+      troca.onclick = function() {
+        if (
+          troca.src ==
+          "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true"
+        )
+          troca.src =
+            "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true ";
+        else
+          troca.src =
+            "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true";
+      };
+    </script>
+  </body>
+</html>

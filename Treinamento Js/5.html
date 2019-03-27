@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>
+      Treinamento de JS
+    </title>
+  </head>
+  <body>
+    <input id="input_digitar_nome" type="text" />
+    <button id="btn_contar_caracteres">Contar caracteres</button>
+    <script>
+      var btn_exibir_nome = document.querySelector("#btn_contar_caracteres");
+
+      btn_exibir_nome.onclick = function() {
+        var nome_digitado = document.querySelector("#input_digitar_nome").value;
+        console.log(nome_digitado);
+        alert(nome_digitado.length + " caracteres!");
+      };
+    </script>
+  </body>
+</html>

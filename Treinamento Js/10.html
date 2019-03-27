@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>
+      Treinamento de JS
+    </title>
+  </head>
+  <body>
+    <span>Nome: </span>
+    <input id="input_nome" type="text" />
+    <br />
+    <span>Sobrenome: </span>
+    <input id="input_sobrenome" type="text" />
+    <br />
+    <span>CPF: </span>
+    <input id="input_cpf" type="text" />
+    <br />
+    <button id="btn_saudacao">Saudação</button>
+    <script>
+      var btn_saudacao = document.querySelector("#btn_saudacao");
+      /* Função do botão
+      teste do comentário*/
+      btn_saudacao.onclick = function() {
+        var nome_digitado = document.querySelector("#input_nome").value;
+        var sobrenome_digitado = document.querySelector("#input_sobrenome")
+          .value;
+        var cpf_digitado = document.querySelector("#input_cpf").value;
+        if (cpf_digitado.length < 6) {
+          alert("O CPF precisa ter 6 caracteres!");
+        } else {
+          var contador = cpf_digitado.length;
+          var cpf_digitado =
+            cpf_digitado.slice(0, 3) + "." + cpf_digitado.slice(3);
+
+          console.log(cpf_digitado);
+
+          alert("Olá " + nome_digitado + " " + sobrenome_digitado);
+        }
+      };
+    </script>
+  </body>
+</html>
