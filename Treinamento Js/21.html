@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>
+      Treinamento de JS
+    </title>
+  </head>
+  <body>
+    <span>Valor 1: </span>
+    <input type="number" id="input_soma1" type="text" />
+    <br />
+    <span>Desconto: </span>
+    <input type="number" id="input_soma2" type="text" />
+    <br />
+    <button
+      id="btn_calcular"
+      onclick="multiplicacao(input_soma1.value, input_soma2.value)"
+    >
+      Calcular
+    </button>
+    <script>
+      function multiplicacao(n1, n2) {
+        var resultado_multiplicacao = n1 * (n2 / 100);
+        alert(resultado_multiplicacao);
+      }
+      //Captar o botão
+      /*var btn_calcular = document.querySelector("#btn_calcular");
+
+      btn_calcular.onclick = function() {
+        var resultado_conta = n1 % n2;
+        if (resultado_conta == 0) var restultado_exibido = "par";
+        else var restultado_exibido = "impar";
+
+        alert(resultado);
+      };*/
+    </script>
+  </body>
+</html>

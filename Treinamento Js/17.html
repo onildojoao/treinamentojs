@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>
+      Treinamento de JS
+    </title>
+  </head>
+  <body>
+    <span>Valor 1: </span>
+    <input type="number" id="input_soma1" type="text" />
+    <br />
+    <span>Valor 2: </span>
+    <input type="number" id="input_soma2" type="text" />
+    <br />
+    <span>Soma: </span>
+    <input id="input_soma_total" type="text" />
+    <br />
+    <button id="btn_calcular">
+      Calcular
+    </button>
+    <script>
+      //Captar o botão
+      var btn_calcular = document.querySelector("#btn_calcular");
+      n1 = document.querySelector("#input_soma1").value;
+      n2 = document.querySelector("#input_soma2").value;
+      //Função onclick
+      var soma_final = (btn_calcular.onclick = function somarNumeros(n1, n2) {
+        console.log(n1);
+        console.log(n2);
+        if (n1 == "" && n2 == "") {
+          alert("Os dois campos precisam ser preenchidos!");
+        } else {
+          var soma_total = document.querySelector("#input_soma_total");
+          var resultado_soma = Number(n1) + Number(n2);
+
+          console.log(resultado_soma);
+
+          soma_total.value = String(resultado_soma);
+          return soma_total.value;
+        }
+      });
+    </script>
+  </body>
+</html>

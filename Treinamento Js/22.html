@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>
+      Treinamento de JS
+    </title>
+  </head>
+  <body>
+    <span>Ano de Nascimento: </span>
+    <input type="number" id="input_soma1" type="text" />
+    <br />
+
+    <br />
+    <button id="btn_calcular" onclick="multiplicacao(input_soma1.value)">
+      Calcular
+    </button>
+    <script>
+      function multiplicacao(n1) {
+        var dataAtual = new Date();
+        var anoAtual = dataAtual.getFullYear();
+        var resultado_multiplicacao = anoAtual - n1;
+        if (resultado_multiplicacao >= 18) alert("Maior de Idade");
+        else alert("Menor de Idade");
+      }
+    </script>
+  </body>
+</html>
